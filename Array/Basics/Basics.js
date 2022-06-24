@@ -91,3 +91,16 @@ function name(params) {
 }
 const playersName = array.map(name);
 console.log(playersName);// ["Keylor Navas", "Denis Franchi", "Presnel Kimpembe", "Sergio Ramos", "Marquinhos", "Abdou Diallo", "El Chadaille Bitshiabu", "Marco Verrati", "Idrissa Gueye", "Xavi Simons", "Ismaël Gharbi", "Edouard Michut", "Kylian Mbappe", "Neymar Jr", "Lionel Messi"]
+
+
+/**
+ * We can create a new array with the result of function applyed to each item in the array by using the filter() method.
+ * You give to filter a function and he will apply it to each item in the array.
+ * Filter() is like map() but it will return only the items that satisfy the function.
+ */
+function name(params) {
+    return params.age <= 20;
+}
+
+const titis = array.filter(name);
+console.log(titis);//[{"name": "Denis Franchi","age": "20","position": "Goalkeeper", "foot": "Right"},{"name": "El Chadaille Bitshiabu","age": "17","position": "Defender","foot": "Left"},{"name": "Xavi Simons","age": "19","position": "Midfielder","foot": "Right"},{"name": "Ismaël Gharbi","age": "18","position": "Midfielder","foot": "Right"},{"name": "Edouard Michut","age": "19","position": "Midfielder","foot": "Right"}]
